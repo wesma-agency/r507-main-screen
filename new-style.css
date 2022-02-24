@@ -416,14 +416,14 @@
 	position: absolute;
 	bottom: -50px;
 	z-index: 2;
-	animation: animCloud 10s infinite linear;
+	animation: animCloud 40s infinite linear;
 }
 
 .anim-bg__coud.--three {
 	position: absolute;
 	bottom: -50px;
 	z-index: 2;
-	animation: animCloud2 10s infinite linear;
+	animation: animCloud2 40s infinite linear;
 }
 
 @keyframes animCloud {
