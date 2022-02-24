@@ -388,10 +388,12 @@ header {
 .scrollDist {
 	position: absolute;
 	top: 0;
+	pointer-events: none;
 }
 
 .anim-bg {
 	overflow: hidden;
+	pointer-events: none;
 }
 
 .anim-bg__mountain.--one {
@@ -399,6 +401,7 @@ header {
 	left: 0;
 	bottom: 200px;
 	z-index: 3;
+	pointer-events: none;
 }
 
 .anim-bg__mountain.--two {
@@ -406,6 +409,7 @@ header {
 	right: 10%;
 	bottom: 200px;
 	z-index: 1;
+	pointer-events: none;
 }
 
 .anim-bg__mountain.--three {
@@ -413,6 +417,7 @@ header {
 	right: 0;
 	bottom: 200px;
 	z-index: 2;
+	pointer-events: none;
 }
 
 .anim-bg__coud.--one {
@@ -420,6 +425,7 @@ header {
 	width: 100%;
 	bottom: -0px;
 	z-index: 4;
+	pointer-events: none;
 	/* animation: animCloud 30s infinite linear; */
 }
 
@@ -432,6 +438,7 @@ header {
 	bottom: -50px;
 	z-index: 2;
 	animation: animCloud 60s infinite linear;
+	pointer-events: none;
 }
 
 .anim-bg__coud.--three {
@@ -439,6 +446,7 @@ header {
 	bottom: -50px;
 	z-index: 2;
 	animation: animCloud2 60s infinite linear;
+	pointer-events: none;
 }
 
 @keyframes animCloud {
