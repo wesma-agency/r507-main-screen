@@ -126,6 +126,21 @@
 	font-style: normal;
 }
 
+header {
+	position: relative;
+	z-index: 15;
+}
+
+.main-nav {
+	position: relative;
+	z-index: 15;
+}
+
+.breadcrumbs {
+	position: relative;
+	z-index: 15;
+}
+
 .main-screen-service {
 	position: relative;
 	background: #28b7c6;
@@ -416,14 +431,14 @@
 	position: absolute;
 	bottom: -50px;
 	z-index: 2;
-	animation: animCloud 40s infinite linear;
+	animation: animCloud 60s infinite linear;
 }
 
 .anim-bg__coud.--three {
 	position: absolute;
 	bottom: -50px;
 	z-index: 2;
-	animation: animCloud2 40s infinite linear;
+	animation: animCloud2 60s infinite linear;
 }
 
 @keyframes animCloud {
