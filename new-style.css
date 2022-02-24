@@ -127,18 +127,12 @@
 }
 
 header {
-	position: relative;
-	z-index: 15;
 }
 
 .main-nav {
-	position: relative;
-	z-index: 15;
 }
 
 .breadcrumbs {
-	position: relative;
-	z-index: 15;
 }
 
 .main-screen-service {
