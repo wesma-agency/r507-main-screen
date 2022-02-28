@@ -138,6 +138,7 @@ header {
 .main-screen-service {
 	position: relative;
 	background: #28b7c6;
+	overflow: hidden;
 }
 
 .main-screen-service .header-top-bgr {
@@ -465,13 +466,46 @@ header {
 	}
 }
 
+.main-screen-service__image-bg-mobile {
+	display: none;
+	position: absolute;
+	bottom: 20%;
+	left: 0;
+	width: 100%;
+}
+
+.main-screen-service__image-bg-mobile img {
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media (max-width: 1400px) {
+	.anim-bg__mountain.--one {
+		left: -10%;
+	}
+
+	.anim-bg__mountain.--two {
+		right: 0%;
+	}
+
+	.anim-bg__mountain.--three {
+		right: -10%;
+	}
+}
+
 @media (max-width: 1170px) {
+	.main-screen-service__image-bg-mobile {
+		display: block;
+	}
+
 	.anim-bg {
 		display: none;
 	}
 
 	.sect-service__wrap {
-		padding: 30px 0 50px 0;
+		padding: 30px 0 150px 0;
 	}
 
 	.sect-service__title {
@@ -495,31 +529,56 @@ header {
 
 @media (max-width: 900px) {
 	.sect-service__row {
-		flex-direction: column;
-		align-items: center;
+		flex-wrap: wrap;
 	}
 
 	.sect-service__column:nth-child(1) {
+		display: flex;
+		flex-direction: column;
 		flex-basis: initial;
 		text-align: center;
+		margin-right: 10px;
+		width: calc(50% - 10px);
+		order: 1;
 	}
 
 	.sect-service__column:nth-child(2) {
 		padding-top: 0px;
-		margin: 60px 0px;
+		margin-top: 30px;
+		width: 100%;
+		order: 3;
 	}
 
 	.sect-service__column:nth-child(3) {
+		display: flex;
+		flex-direction: column;
 		flex-basis: initial;
 		text-align: center;
+		margin-left: 10px;
+		width: calc(50% - 10px);
+		order: 2;
+	}
+
+	.sect-service__subtext {
+		flex-grow: 1;
+		max-width: 300px;
+		margin: 0 auto 15px auto;
 	}
 
 	.sect-service__column:nth-child(1) .sect-service__btn {
 		margin: 0 auto;
+		width: 100%;
 	}
 
 	.sect-service__column:nth-child(3) .sect-service__btn {
 		margin: 0 auto;
+		width: 100%;
+	}
+
+	.main-screen-service__image-bg-mobile {
+		left: 50%;
+		transform: translate(-50%, 0);
+		width: 120vw;
 	}
 }
 
@@ -537,6 +596,10 @@ header {
 	.service-advantages__item {
 		flex: 0 1 calc(100% / 2);
 	}
+
+	.main-screen-service__image-bg-mobile {
+		bottom: 27%;
+	}
 }
 
 @media (max-width: 500px) {
@@ -550,5 +613,22 @@ header {
 
 	.card-service__text {
 		font-size: 12px;
+	}
+
+	.sect-service__row {
+		margin-bottom: 30px;
+	}
+
+	.sect-service__title {
+		font-size: 26px;
+	}
+
+	.sect-service__subtext {
+		font-size: 12px;
+	}
+
+	.sect-service__btn.btn {
+		font-size: 12px;
+		padding: 10px;
 	}
 }
