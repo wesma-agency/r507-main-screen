@@ -467,6 +467,7 @@ header {
 }
 
 .main-screen-service__image-bg-mobile {
+	pointer-events: none;
 	display: none;
 	position: absolute;
 	bottom: 0;
@@ -476,6 +477,7 @@ header {
 }
 
 .main-screen-service__image-mobile {
+	pointer-events: none;
 	max-width: 100%;
 	width: 100%;
 	object-fit: cover;
@@ -520,6 +522,79 @@ header {
 }
 
 @media (max-width: 1170px) {
+	.main-screen-service .main-nav_catalog {
+		background: #fff;
+	}
+
+	.main-screen-service .navigation li a {
+		color: #263238;
+	}
+
+	header {
+		background: #fff;
+	}
+
+	.main-screen-service .header-top-bgr {
+		background: #f3f5f6;
+	}
+
+	.main-screen-service .search-inp[type="text"] {
+		background: #e9edef;
+		color: #000;
+	}
+
+	.main-screen-service .search-inp[type="text"]::placeholder {
+		color: #263238;
+	}
+
+	.main-screen-service .logo-info {
+		color: #000;
+	}
+
+	.main-screen-service .header-bottom-email a {
+		color: #263238;
+	}
+
+	.main-screen-service .header-bottom-phone a {
+		color: #263238;
+	}
+
+	.main-screen-service .work-hours {
+		color: #b0bec5;
+	}
+
+	.main-screen-service .logo-img img {
+		filter: none;
+	}
+
+	.main-screen-service .navigation li a {
+		color: #263238;
+	}
+
+	.main-screen-service .breadcrumbs {
+		color: #263238;
+	}
+
+	.main-screen-service .breadcrumbs a {
+		color: #263238;
+	}
+
+	.main-screen-service .main-nav_catalog {
+		box-shadow: 0px 8px 20px rgba(38, 50, 56, 0.1), 0px 4px 10px rgba(38, 50, 56, 0.05);
+	}
+
+	.main-screen-service .search button {
+		background: #e9edef;
+	}
+
+	.main-screen-service .header-top-nav ul li a {
+		color: rgba(255, 255, 255, 0.6);
+	}
+
+	.main-screen-service .breadcrumbs {
+		display: none;
+	}
+
 	.main-screen-service__image-bg-mobile {
 		display: block;
 	}
