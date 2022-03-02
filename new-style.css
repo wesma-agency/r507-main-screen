@@ -1,3 +1,12 @@
+/*не надо*/
+@font-face {
+	font-family: "FontAwesome";
+	src: url("./font/fontawesome-webfont.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+/*не надо*/
+
 @font-face {
 	font-family: "Geometria";
 	src: url("./font/Geometria-Regular.eot");
@@ -186,6 +195,18 @@ header {
 	color: #fff;
 }
 
+.main-screen-service .breadcrumbs i {
+	color: #fff;
+}
+
+.main-screen-service .breadcrumbs i.brdcr-active {
+	color: #fff;
+}
+
+.main-screen-service .breadcrumbs a:hover {
+	color: #e20516;
+}
+
 .main-screen-service .main-nav_catalog {
 	box-shadow: none;
 }
@@ -272,6 +293,15 @@ header {
 	font-size: 14px;
 	line-height: 120%;
 	color: #ffffff;
+	transition: all 0.3s ease;
+}
+
+.sect-service__group.scroll .sect-service__text {
+	color: #000;
+}
+
+.sect-service__group.scroll .sect-service__link {
+	color: #000;
 }
 
 .sect-service__text ul {
@@ -297,8 +327,7 @@ header {
 	transition: all 0.3s ease;
 }
 
-.sect-service__link::before {
-	content: "";
+.sect-service__link svg {
 	position: absolute;
 	top: 50%;
 	right: 0;
@@ -309,7 +338,7 @@ header {
 	transition: all 0.3s ease;
 }
 
-.sect-service__link:hover::before {
+.sect-service__link:hover svg {
 	transform: translate(10px, -50%);
 }
 
@@ -522,6 +551,18 @@ header {
 }
 
 @media (max-width: 1170px) {
+	.sect-service__text {
+		color: #fff !important;
+	}
+
+	.sect-service__link {
+		color: #fff !important;
+	}
+
+	.sect-service__link svg path {
+		fill: #fff !important;
+	}
+
 	.main-screen-service .main-nav_catalog {
 		background: #fff;
 	}
