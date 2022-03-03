@@ -9,6 +9,7 @@ let tl = gsap
 	.fromTo(".sect-service__text", { duration: 0.3, color: "#fff" }, { duration: 0.3, color: "#000" }, 0)
 	.fromTo(".sect-service__link", { duration: 0.3, color: "#fff" }, { duration: 0.3, color: "#000" }, 0)
 	.fromTo(".sect-service__link svg path", { duration: 0.3, fill: "#fff" }, { duration: 0.3, fill: "#000" }, 0)
+	.fromTo(".sect-service__wrap", { duration: 0.3, paddingBottom: "170px" }, { duration: 0.3, paddingBottom: "30" }, 0)
 	.fromTo(".anim-bg__mountain.--one", { y: 0 }, { y: -60 }, 0)
 	.fromTo(".anim-bg__mountain.--two", { y: 0 }, { y: -250 }, 0)
 	.fromTo(".anim-bg__mountain.--three", { y: 0 }, { y: -200 }, 0)
