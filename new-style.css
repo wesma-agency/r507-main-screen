@@ -163,6 +163,10 @@ header {
 	color: #fff;
 }
 
+.main-screen-service .header-bottom-email:before {
+	color: #fff;
+}
+
 .main-screen-service .search-inp[type="text"]::placeholder {
 	color: #fff;
 }
@@ -609,6 +613,10 @@ header {
 
 	.main-screen-service .search button:before {
 		color: #bebebe;
+	}
+
+	.main-screen-service .header-bottom-email:before {
+		color: #008795;
 	}
 
 	.main-screen-service .search-inp[type="text"]::placeholder {
